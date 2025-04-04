@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclador de PDF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mesclador de PDF</h1>
+        
+        <div class="button-container">
+            <input type="file" id="pdf-files" accept=".pdf" multiple style="display: none;">
+            <label for="pdf-files" class="btn">Selecione os PDFs</label>
+        </div>
+
+        <div class="file-list-container">
+            <div class="file-list-header">
+                <h2>Arquivos Selecionados</h2>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Buscar arquivos...">
+                </div>
+            </div>
+            
+            <div class="file-list" id="preview-area">
+                <!-- Aqui serão exibidos os PDFs selecionados -->
+            </div>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress" id="progress-bar"></div>
+            </div>
+            <div class="status" id="status">Pronto para mesclar</div>
+        </div>
+
+        <button id="merge-button" class="btn merge-btn">Mesclar PDFs</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

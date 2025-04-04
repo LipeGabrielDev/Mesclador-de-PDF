@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1E88E5;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #1E88E5;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1976D2;
+}
+
+.file-list-container {
+    background-color: #2D2D2D;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.file-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.search-container {
+    flex: 1;
+    margin-left: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #3D3D3D;
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.file-list {
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #1E1E1E;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.file-item {
+    padding: 10px;
+    border-bottom: 1px solid #3D3D3D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-item:last-child {
+    border-bottom: none;
+}
+
+.file-name {
+    flex: 1;
+}
+
+.remove-file {
+    color: #FF5252;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.progress-container {
+    margin: 20px 0;
+}
+
+.progress-bar {
+    background-color: #1E1E1E;
+    border-radius: 5px;
+    height: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #1E88E5;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+.status {
+    text-align: center;
+    color: #AAAAAA;
+    font-size: 0.9em;
+}
+
+.merge-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    background-color: #4CAF50;
+}
+
+.merge-btn:hover {
+    background-color: #388E3C;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1E1E1E;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3D3D3D;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4D4D4D;
+} 
